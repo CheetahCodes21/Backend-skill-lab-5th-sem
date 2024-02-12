@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const Author = require('../modal/Author');
+const Author = require('../modal/Auther');
 
 const saltRounds = 10;
 const jwtSecret = process.env.JWT_SECRET || 'default_secret';
