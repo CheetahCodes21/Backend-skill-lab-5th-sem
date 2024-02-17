@@ -7,7 +7,7 @@ const route = require("./Routes/Route");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/skilllab5";
+const mongoURI = process.env.MONGODB_URI || "mongodb://0.0.0.0:27017/skilllab5";
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
